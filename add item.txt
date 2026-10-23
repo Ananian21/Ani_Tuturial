@@ -1,0 +1,16 @@
+BEGIN AddItem
+Prompt user to enter new task title
+Read taskTitle
+
+IF taskTitle is not empty THEN
+Create newTask object with:
+- title = taskTitle
+- status = "Pending" (or "In Progress")
+
+
+Add newTask to todoList
+Display "Task added successfully!"
+ELSE
+Display "Task title cannot be empty."
+ENDIF
+END AddItem
